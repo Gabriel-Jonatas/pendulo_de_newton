@@ -1,0 +1,59 @@
+h1{
+	text-align: center;
+	color: #fff;
+	text-shadow: -1px 1px 0px #000;
+}
+.container{
+	width: 800px;
+	height: 200px;
+	display: block;
+	position: relative;
+	margin: auto;
+	border-left: 1px solid transparent;
+}
+.esfera{
+	width: 100px;
+	height: 100px;
+	display: block;
+	position: absolute;
+	border-radius: 50px;
+	background-image: linear-gradient(60deg,red,yellow);
+	top: 100px;
+}
+@keyframes pendulo_esq{
+	0%{left: 150px;top: 100px;}
+	25%{left: -150px;top: 80px;}
+	50%{left: 150px;top: 100px;}
+	75%{left: 150px;top: 100px;}
+	100%{left: 150px;top: 100px;}
+}
+.position01{
+	left: 150px;
+	animation-name: pendulo_esq;
+	animation-duration: 1.1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+.position02{
+	left: 250px;
+}
+.position03{
+	left: 350px;
+}
+.position04{
+	left: 450px;
+}
+@keyframes pendulo_dir{
+	0%{left: 550px;top: 100px;}
+	25%{left: 550px;top: 100px;}
+	50%{left: 550px;top: 100px;}
+	75%{left: 850px;top: 80px;}
+	100%{left: 550px;top: 100px;}
+}
+.position05{
+	left: 550px;
+	animation-name: pendulo_dir;
+	animation-duration: 1.1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
